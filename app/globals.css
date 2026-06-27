@@ -1,26 +1,47 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0E1217;
+  --foreground: #E6EDF3;
+
+  --color-primary: #38C4F0;
+  --color-primary-2: #5FD2F5;
+  --color-primary-3: #2A8FB0;
+  
+  --color-light: #E6EDF3;
+  --color-light-2: #AAB4C3;
+  --color-light-3: #7A8699;
+
+  --color-dark: #0E1217;
+  --color-dark-2: #151B22;
+  --color-dark-3: #1C2430;
+
+  --color-accent: #263041;
+  --color-accent-2: rgba(56, 196, 240, .2);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-primary: var(--color-primary);
+  --color-primary-2: var(--color-primary-2);
+  --color-primary-3: var(--color-primary-3);
+
+  --color-light: var(--color-light);
+  --color-light-2: var(--color-light-2);
+  --color-light-3: var(--color-light-3);
+
+  --color-dark: var(--color-dark);
+  --color-dark-2: var(--color-dark-2);
+  --color-dark-3: var(--color-dark-3);
+
+  --color-accent: var(--color-accent);
+  --color-accent-2: var(--color-accent-2);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Archivo Variable", sans-serif;
 }
